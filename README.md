@@ -31,10 +31,7 @@ Hosting WordPress on AWS EC2 allows you to leverage the scalability, reliability
 ## What is EC2?
 Amazon Elastic Compute Cloud (EC2) is a web service provided by Amazon Web Services (AWS) that allows users to rent virtual servers (referred to as "instances") on which they can run their applications. EC2 instances are essentially virtual machines that can be launched in the cloud and scaled up or down as needed.
 
-<<<<<<< HEAD
 ![EC2](images/ec2logo.png)
-=======
-![EC2](images/ec2.png)
 
 **Why do we need an EC2 instance?**
 
@@ -42,7 +39,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 1: Create and Configure the VPC
 
-![VPC](images/vpc.png)
+![VPC](images/vpc.PNG)
 *Figure 1: VPC - Created a VPC with a CIDR block of 10.0.0.0/16. CIDR blocks define a range of IP addresses. The VPC is your private section of the internet where you can run your servers securely.*
 
 > [!NOTE]
@@ -59,7 +56,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 3: Create an Internet Gateway
 
-![Internet Gateway](images/internet-gateway.png)
+![Internet Gateway](images/itg.PNG)
 *Figure 3: IGW - Created an Internet Gateway and attached it to the VPC. An Internet Gateway allows your servers to access the internet and lets people from the internet access your servers.*
 
 > [!NOTE]
