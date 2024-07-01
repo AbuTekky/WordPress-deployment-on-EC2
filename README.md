@@ -82,11 +82,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 6: Configuring Security Groups during EC2 Setup
 
-<<<<<<< HEAD
 ![Security Group](images/sg.png)
-=======
-![Security Group](images/security-group.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
 *Figure 6: During the EC2 setup, created a security group, enabled auto-assign public IP, and configured inbound rules for port 22 for SSH access. Security groups act like virtual firewalls for your instance.*
 
 > [!NOTE]
@@ -131,15 +127,15 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo
 
-<<<<<<< HEAD
+
 ![Search Amazon Repo](images/searchamazonrepo.png)
 ![Install MariaDB](images/installmariadb.png)
 ![Status MariaDB](images/statusmariadb.png)
-=======
+
 ![Search Amazon Repo](images/search-amazon-repo.png)
 ![Install MariaDB](images/install-mariadb.png)
 ![Status MariaDB](images/status-mariadb.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
+
 *Figure 10: Installed MariaDB 10.5 (including server and client), started, enabled, and checked the status to ensure it was running. MariaDB is essential for storing, managing, and retrieving data, as WordPress relies on a database to store its content, user data, settings, etc.*
 
 > [!NOTE]
@@ -149,19 +145,19 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress
 
-<<<<<<< HEAD
+
 ![MariaDB for WordPress](images/MariaDBWordpress.png)
 ![Download WordPress](images/downloadwordpress.png)
 ![WordPress Config](images/wordpressconfig.png)
 ![Database Settings](images/databasesettings.png)
 ![WordPress Permissions](images/wppermissions.png)
-=======
+
 ![MariaDB for WordPress](images/mariadb-for-wordpress.png)
 ![Download WordPress](images/download-wordpress.png)
 ![WordPress Config](images/wordpress-config.png)
 ![Database Settings](images/database-settings.png)
 ![WordPress Permissions](images/wordpress-permissions.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
+
 *Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to the HTML directory. Configured WordPress by setting database settings in wp-config.php and changed the ownership of all files and directories to the user 'nginx' and group 'nginx'.
 
 > [!NOTE]
@@ -174,11 +170,11 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 12: Nginx Configuration for WordPress and Setting the EC2 Public IP Address
 
-<<<<<<< HEAD
+
 ![Nginx Configuration for WordPress](images/nanowordpress.png)
-=======
+
 ![Nginx Configuration for WordPress](images/nginx-configuration-wordpress.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
+
 *Figure 12: Configured Nginx to serve my WordPress site using my EC2 instance's public IP address by editing /etc/nginx/conf.d/wordpress.conf. This configuration ensures Nginx listens for requests coming to my EC2 instance's public IP address.*
 
 > [!NOTE]
@@ -186,7 +182,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 13: Completed the WordPress Installation
 
-<<<<<<< HEAD
+
 ![WordPress Setup](images/wpsetup.png)
 ![WordPress Success](images/wpsuccess.png)
 ![WordPress Login](images/wplogin.png)
@@ -196,7 +192,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![WordPress Success](images/wordpress-success.png)
 ![WordPress Login](images/wordpress-login.png)
 ![WordPress Welcome](images/wordpress-welcome.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
+
 *Figure 13: Opened my web browser, navigated to http://35.176.248.55, and followed the on-screen instructions to complete the WordPress installation by entering details such as the site title, admin username, password, and email address. Successfully installed MariaDB, Nginx, PHP, and configured WordPress on my EC2 instance.*
 
 ## Clean-up
