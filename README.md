@@ -35,7 +35,6 @@ Amazon Elastic Compute Cloud (EC2) is a web service provided by Amazon Web Servi
 ![EC2](images/ec2logo.png)
 =======
 ![EC2](images/ec2.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
 
 **Why do we need an EC2 instance?**
 
