@@ -67,6 +67,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ![Route Table](images/rtb.png)
 ![Route Table](images/rtb-1.PNG)
+
 *Figure 4: RTB - Created a route table for the VPC, then created a route to direct internet traffic to the Internet Gateway and associated the route table with the subnet. The route table determines how traffic is directed within the VPC.*
 
 > [!NOTE]
@@ -104,9 +105,9 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 8: Install Nginx
 
 ![Nginx](images/nginx.png)
-![Nginx Service](images/nginx-service.png)
-![Nginx Listening](images/nginx-listening.png)
-![Installed Nginx](images/installed-nginx.png)
+![Nginx Service](images/nginxservice.png)
+![Nginx Listening](images/nginxlistening.png)
+![Installed Nginx](images/installednginx.png)
 *Figure 8: Installed Nginx web server, checked if it was installed, enabled the service, and ensured it was running and listening on port 80. When running curl localhost, I confirmed the Nginx web server was successfully installed. Nginx ensures efficient, secure, and scalable delivery of web applications (WordPress).*
 
 > [!NOTE]
