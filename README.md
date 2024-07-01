@@ -40,6 +40,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 1: Create and Configure the VPC
 
 ![VPC](images/vpc.PNG)
+
 *Figure 1: VPC - Created a VPC with a CIDR block of 10.0.0.0/16. CIDR blocks define a range of IP addresses. The VPC is your private section of the internet where you can run your servers securely.*
 
 > [!NOTE]
@@ -49,6 +50,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 2: Create a Subnet
 
 ![Subnet](images/subnet.PNG)
+
 *Figure 2: Subnet - Created a subnet with a CIDR block of 10.0.0.0/24 within the VPC. This subnet can support up to 256 IP addresses, including network, broadcast, and host addresses.*
 
 > [!NOTE]
@@ -57,6 +59,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 3: Create an Internet Gateway
 
 ![Internet Gateway](images/itg.PNG)
+
 *Figure 3: IGW - Created an Internet Gateway and attached it to the VPC. An Internet Gateway allows your servers to access the internet and lets people from the internet access your servers.*
 
 > [!NOTE]
@@ -77,6 +80,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 5: Create EC2 Instance with Public IP
 
 ![EC2 Instance](images/ec2.png)
+
 *Figure 5: EC2 Instance - Created an EC2 Instance with a Public IP to host WordPress and be accessible from anywhere. This allows remote management using SSH. The EC2 instance is the backbone of the web server setup.*
 
 > [!NOTE]
@@ -120,9 +124,6 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ![PHP Install](images/phpinstall.png)
 ![Confirm PHP](images/confirmphp.png)
-=======
-![PHP Install](images/php-install.png)
-![Confirm PHP](images/confirm-php.png)
 
 *Figure 9: Installed PHP and set up the PHP environment to handle PHP scripts and connect to the MariaDB database. Verified that it is installed as mysqli/mysqlnd listed in the output. Installing PHP MySQL is essential for connecting and communicating with MariaDB databases.*
 
@@ -131,10 +132,6 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo
 
-
-![Search Amazon Repo](images/searchamazonrepo.png)
-![Install MariaDB](images/installmariadb.png)
-![Status MariaDB](images/statusmariadb.png)
 
 ![Search Amazon Repo](images/searchamazonrepo.png)
 ![Install MariaDB](images/installmariadb.png)
@@ -155,12 +152,6 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![WordPress Config](images/wordpressconfig.png)
 ![Database Settings](images/databasesettings.png)
 ![WordPress Permissions](images/wppermissions.png)
-
-![MariaDB for WordPress](images/mariadb-for-wordpress.png)
-![Download WordPress](images/download-wordpress.png)
-![WordPress Config](images/wordpress-config.png)
-![Database Settings](images/database-settings.png)
-![WordPress Permissions](images/wordpress-permissions.png)
 
 *Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to the HTML directory. Configured WordPress by setting database settings in wp-config.php and changed the ownership of all files and directories to the user 'nginx' and group 'nginx'.
 
@@ -187,11 +178,6 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 13: Completed the WordPress Installation
 
 
-![WordPress Setup](images/wpsetup.png)
-![WordPress Success](images/wpsuccess.png)
-![WordPress Login](images/wplogin.png)
-![WordPress Welcome](images/wpwelcome.png)
-=======
 ![WordPress Setup](images/wpsetup.png)
 ![WordPress Success](images/wpsuccess.png)
 ![WordPress Login](images/wplogin.png)
