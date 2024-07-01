@@ -128,7 +128,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 10: Installed MariaDB 10.5 (including server and client), started, enabled, and checked the status to ensure it was running. MariaDB is essential for storing, managing, and retrieving data, as WordPress relies on a database to store its content, user data, settings, etc.*
 
 > [!NOTE]
-> **What does it do?**
+> What does it do?
 > - **MariaDB:** Handles data storage and management.
 > - **PHP MySQL:** Enables PHP applications such as WordPress to communicate with MariaDB, sending queries and receiving data.
 
