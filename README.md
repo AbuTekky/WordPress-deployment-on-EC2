@@ -66,6 +66,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 4: Create a Route Table
 
 ![Route Table](images/rtb.PNG)
+
 *Figure 4: RTB - Created a route table for the VPC, then created a route to direct internet traffic to the Internet Gateway and associated the route table with the subnet. The route table determines how traffic is directed within the VPC.*
 
 > [!NOTE]
@@ -74,7 +75,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 5: Create EC2 Instance with Public IP
 
-![EC2 Instance](images/ec2-instance.png)
+![EC2 Instance](images/ec2.png)
 *Figure 5: EC2 Instance - Created an EC2 Instance with a Public IP to host WordPress and be accessible from anywhere. This allows remote management using SSH. The EC2 instance is the backbone of the web server setup.*
 
 > [!NOTE]
@@ -83,6 +84,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 6: Configuring Security Groups during EC2 Setup
 
 ![Security Group](images/sg.png)
+
 *Figure 6: During the EC2 setup, created a security group, enabled auto-assign public IP, and configured inbound rules for port 22 for SSH access. Security groups act like virtual firewalls for your instance.*
 
 > [!NOTE]
@@ -92,6 +94,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 7: Connect to the EC2 Instance
 
 ![SSH](images/ssh.png)
+
 *Figure 7: Ran the chmod command to ensure my key is not publicly viewable, then ran the ssh command to securely access my server. The chmod 400 command sets the file permissions of the private key file (coderco-prod.pem) so that only the owner can read it.*
 
 > [!NOTE]
