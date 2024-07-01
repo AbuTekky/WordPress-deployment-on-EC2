@@ -48,7 +48,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 2: Create a Subnet
 
-![Subnet](images/subnet.png)
+![Subnet](images/subnet.PNG)
 *Figure 2: Subnet - Created a subnet with a CIDR block of 10.0.0.0/24 within the VPC. This subnet can support up to 256 IP addresses, including network, broadcast, and host addresses.*
 
 > [!NOTE]
@@ -65,7 +65,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 4: Create a Route Table
 
-![Route Table](images/route-table.png)
+![Route Table](images/rtb.PNG)
 *Figure 4: RTB - Created a route table for the VPC, then created a route to direct internet traffic to the Internet Gateway and associated the route table with the subnet. The route table determines how traffic is directed within the VPC.*
 
 > [!NOTE]
