@@ -113,13 +113,12 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 ## Step 9: Install PHP MySQL
 
-<<<<<<< HEAD
 ![PHP Install](images/phpinstall.png)
 ![Confirm PHP](images/confirmphp.png)
 =======
 ![PHP Install](images/php-install.png)
 ![Confirm PHP](images/confirm-php.png)
->>>>>>> 18c5f1119a57e4ddc24e400d2ec033f39daa7d41
+
 *Figure 9: Installed PHP and set up the PHP environment to handle PHP scripts and connect to the MariaDB database. Verified that it is installed as mysqli/mysqlnd listed in the output. Installing PHP MySQL is essential for connecting and communicating with MariaDB databases.*
 
 > [!NOTE]
