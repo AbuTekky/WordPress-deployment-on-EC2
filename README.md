@@ -155,7 +155,6 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 12: Configured Nginx to serve my WordPress site using my EC2 instance's public IP address by editing /etc/nginx/conf.d/wordpress.conf. This configuration ensures Nginx listens for requests coming to my EC2 instance's public IP address.*
 
 > [!NOTE]
-> **What is it?**
 > /etc/nginx/conf.d/wordpress.conf: Specifies the configuration settings for serving your WordPress site.
 
 ## Step 13: Completed the WordPress Installation
