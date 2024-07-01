@@ -108,6 +108,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![Nginx Service](images/nginxservice.png)
 ![Nginx Listening](images/nginxlistening.png)
 ![Installed Nginx](images/installednginx.png)
+
 *Figure 8: Installed Nginx web server, checked if it was installed, enabled the service, and ensured it was running and listening on port 80. When running curl localhost, I confirmed the Nginx web server was successfully installed. Nginx ensures efficient, secure, and scalable delivery of web applications (WordPress).*
 
 > [!NOTE]
@@ -135,9 +136,9 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![Install MariaDB](images/installmariadb.png)
 ![Status MariaDB](images/statusmariadb.png)
 
-![Search Amazon Repo](images/search-amazon-repo.png)
-![Install MariaDB](images/install-mariadb.png)
-![Status MariaDB](images/status-mariadb.png)
+![Search Amazon Repo](images/searchamazonrepo.png)
+![Install MariaDB](images/installmariadb.png)
+![Status MariaDB](images/statusmariadb.png)
 
 *Figure 10: Installed MariaDB 10.5 (including server and client), started, enabled, and checked the status to ensure it was running. MariaDB is essential for storing, managing, and retrieving data, as WordPress relies on a database to store its content, user data, settings, etc.*
 
@@ -191,10 +192,10 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![WordPress Login](images/wplogin.png)
 ![WordPress Welcome](images/wpwelcome.png)
 =======
-![WordPress Setup](images/wordpress-setup.png)
-![WordPress Success](images/wordpress-success.png)
-![WordPress Login](images/wordpress-login.png)
-![WordPress Welcome](images/wordpress-welcome.png)
+![WordPress Setup](images/wpsetup.png)
+![WordPress Success](images/wpsuccess.png)
+![WordPress Login](images/wplogin.png)
+![WordPress Welcome](images/wpwelcome.png)
 
 *Figure 13: Opened my web browser, navigated to http://35.176.248.55, and followed the on-screen instructions to complete the WordPress installation by entering details such as the site title, admin username, password, and email address. Successfully installed MariaDB, Nginx, PHP, and configured WordPress on my EC2 instance.*
 
