@@ -42,8 +42,8 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![VPC](images/vpc.png)
 *Figure 1: VPC - Created a VPC with a CIDR block of 10.0.0.0/16. CIDR blocks define a range of IP addresses. The VPC is your private section of the internet where you can run your servers securely.*
 
-**What does it do?**
-Creates a virtual network dedicated to my AWS account with an address range of 10.0.0.0/16
+> [!NOTE] **What does it do?**
+> Creates a virtual network dedicated to my AWS account with an address range of 10.0.0.0/16
 
 ## Step 2: Create a Subnet
 
