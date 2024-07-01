@@ -37,7 +37,7 @@ Amazon Elastic Compute Cloud (EC2) is a web service provided by Amazon Web Servi
 
 One of the main reasons we need EC2 instances is because they offer **scalability and flexibility**. We can launch EC2 instances **on demand and scale up or down** as needed to match our workload requirements. This means we can easily provision resources when we need them and only pay for what we use.
 
-## Step 1: Create and Configure the VPC
+## Step 1: Create and Configure the VPC 🌐
 
 ![VPC](images/vpc.PNG)
 
@@ -47,7 +47,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > What does it do?
 > This creates a virtual network dedicated to my AWS account with an address range of 10.0.0.0/16
 
-## Step 2: Create a Subnet
+## Step 2: Create a Subnet 🌍
 
 ![Subnet](images/subnet.PNG)
 
@@ -56,7 +56,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > [!NOTE]
 > This creates a smaller network within my VPC (10.0.0.0/24), allowing up to 256 IP addresses.
 
-## Step 3: Create an Internet Gateway
+## Step 3: Create an Internet Gateway 🌐
 
 ![Internet Gateway](images/itg.PNG)
 
@@ -66,7 +66,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > What does it do?
 > This creates and attaches an Internet Gateway to my VPC, enabling internet connectivity essential for web servers and other resources that need to communicate with the outside world.
 
-## Step 4: Create a Route Table
+## Step 4: Create a Route Table 📑
 
 ![Route Table](images/rtb.png)
 ![Route Table](images/rtb-1.PNG)
@@ -77,7 +77,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > What does it do?
 > Associating the route table with the subnet ensures that traffic from the subnet is routed through the Internet Gateway, allowing instances in the subnet to access the internet.
 
-## Step 5: Create EC2 Instance with Public IP
+## Step 5: Create EC2 Instance with Public IP 💻
 
 ![EC2 Instance](images/ec2.png)
 
@@ -86,7 +86,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > [!NOTE]
 > Acts as your virtual server, providing the necessary compute power, storage, and network connectivity to host and run your resources, such as the web application WordPress.
 
-## Step 6: Configuring Security Groups during EC2 Setup
+## Step 6: Configuring Security Groups during EC2 Setup 🔐
 
 ![Security Group](images/sg.png)
 
@@ -96,7 +96,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > What does it do?
 > Controls the incoming and outgoing traffic to and from your instance.
 
-## Step 7: Connect to the EC2 Instance
+## Step 7: Connect to the EC2 Instance 🔌
 
 ![SSH](images/ssh.png)
 
@@ -106,7 +106,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > What does it do?
 > Uses SSH to open a remote connection to the EC2 instance.
 
-## Step 8: Install Nginx
+## Step 8: Install Nginx 🌐
 
 ![Nginx](images/nginx.png)
 ![Nginx Service](images/nginxservice.png)
@@ -120,7 +120,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > - **Reverse Proxy:** Acts as an intermediary, improving load distribution and reducing server load.
 > - **Load Balancer:** Distributes incoming traffic across multiple servers, preventing any single server from becoming a bottleneck.
 
-## Step 9: Install PHP MySQL
+## Step 9: Install PHP MySQL 🛠️
 
 ![PHP Install](images/phpinstall.png)
 ![Confirm PHP](images/confirmphp.png)
@@ -130,7 +130,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > [!NOTE]
 > PHP MySQL is a PHP extension that provides the functionality for PHP to communicate with MariaDB and MySQL databases.
 
-## Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo
+## Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo 🗄️
 
 
 ![Search Amazon Repo](images/searchamazonrepo.png)
@@ -144,7 +144,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > - **MariaDB:** Handles data storage and management.
 > - **PHP MySQL:** Enables PHP applications such as WordPress to communicate with MariaDB, sending queries and receiving data.
 
-## Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress
+## Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress 🗃️
 
 
 ![MariaDB for WordPress](images/MariaDBWordpress.png)
