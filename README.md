@@ -66,7 +66,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ## Step 4: Create a Route Table
 
 ![Route Table](images/rtb.png)
-![Route Table](images/rtb-1.png)
+![Route Table](images/rtb-1.PNG)
 *Figure 4: RTB - Created a route table for the VPC, then created a route to direct internet traffic to the Internet Gateway and associated the route table with the subnet. The route table determines how traffic is directed within the VPC.*
 
 > [!NOTE]
