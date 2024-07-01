@@ -133,4 +133,29 @@ PHP MySQL is a PHP extension that provides the functionality for PHP to communic
 ![WordPress Config](images/wordpress-config.png)
 ![Database Settings](images/database-settings.png)
 ![WordPress Permissions](images/wordpress-permissions.png)
-*Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to
+*Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to the HTML directory. Configured WordPress by setting database settings in wp-config.php and changed the ownership of all files and directories to the user 'nginx' and group 'nginx'.
+
+What does it do?
+- **Database:** Organizes data, ensuring WordPress can manage its data separately from other applications.
+- **User:** Restricts what the WordPress user can do within the database, minimizing security risks.
+- **Database Settings:** WordPress uses wp-config.php to connect to the MariaDB database.
+- **Changing Ownership:** Ensures that the Nginx user owns the WordPress files, allowing the web server to manage them correctly.
+- **Set Permissions:** Ensures directories are executable and readable (755), and files are readable (644), a secure configuration.
+
+## Step 12: Nginx Configuration for WordPress and Setting the EC2 Public IP Address
+
+![Nginx Configuration for WordPress](images/nginx-configuration-wordpress.png)
+*Figure 12: Configured Nginx to serve my WordPress site using my EC2 instance's public IP address by editing /etc/nginx/conf.d/wordpress.conf. This configuration ensures Nginx listens for requests coming to my EC2 instance's public IP address.*
+
+**What is it?**
+/etc/nginx/conf.d/wordpress.conf: Specifies the configuration settings for serving your WordPress site.
+
+## Step 13: Completed the WordPress Installation
+
+![WordPress Setup](images/wordpress-setup.png)
+![WordPress Success](images/wordpress-success.png)
+![WordPress Login](images/wordpress-login.png)
+![WordPress Welcome](images/wordpress-welcome.png)
+*Figure 13: Opened my web browser, navigated to http://35.176.248.55, and followed the on-screen instructions to complete the WordPress installation by entering details such as the site title, admin username, password, and email address. Successfully installed MariaDB, Nginx, PHP, and configured WordPress on my EC2 instance.*
+
+## Clean-up
