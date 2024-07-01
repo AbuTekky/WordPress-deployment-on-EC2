@@ -1,34 +1,30 @@
-# Hosting WordPress on an EC2 Instance
-
-## Table of Contents
-- [Hosting WordPress on an EC2 Instance](#hosting-wordpress-on-an-ec2-instance)
-    - [Introduction](#introduction)
-    - [Prerequisites](#prerequisites)
-    - [What is EC2?](#what-is-ec2)
-    - [Step 1: Create and Configure the VPC](#step-1-create-and-configure-the-vpc)
-    - [Step 2: Create a Subnet](#step-2-create-a-subnet)
-    - [Step 3: Create an Internet Gateway](#step-3-create-an-internet-gateway)
-    - [Step 4: Create a Route Table](#step-4-create-a-route-table)
-    - [Step 5: Create EC2 Instance with Public IP](#step-5-create-ec2-instance-with-public-ip)
-    - [Step 6: Configuring Security Groups during EC2 Setup](#step-6-configuring-security-groups-during-ec2-setup)
-    - [Step 7: Connect to the EC2 Instance](#step-7-connect-to-the-ec2-instance)
-    - [Step 8: Install Nginx](#step-8-install-nginx)
-    - [Step 9: Install PHP MySQL](#step-9-install-php-mysql)
-    - [Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo](#step-10-install-mariadb-105-on-amazon-linux-using-the-default-repo)
-    - [Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress](#step-11-log-in-to-mariadb-as-the-root-user-and-create-a-database-and-user-for-wordpress)
-    - [Step 12: Nginx Configuration for WordPress and Setting the EC2 Public IP Address](#step-12-nginx-configuration-for-wordpress-and-setting-the-ec2-public-ip-address)
-    - [Step 13: Completed the WordPress Installation](#step-13-completed-the-wordpress-installation)
-    - [Clean up](#clean-up)
-
-## Introduction
+Hosting WordPress on an EC2 Instance 🚀
+Table of Contents 📚
+Introduction
+Prerequisites
+What is EC2?
+Step 1: Create and Configure the VPC
+Step 2: Create a Subnet
+Step 3: Create an Internet Gateway
+Step 4: Create a Route Table
+Step 5: Create EC2 Instance with Public IP
+Step 6: Configuring Security Groups during EC2 Setup
+Step 7: Connect to the EC2 Instance
+Step 8: Install Nginx
+Step 9: Install PHP MySQL
+Step 10: Install MariaDB 10.5 on Amazon Linux using the Default Repo
+Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress
+Step 12: Nginx Configuration for WordPress and Setting the EC2 Public IP Address
+Step 13: Completed the WordPress Installation
+Clean up
+Introduction 🌟
 Hosting WordPress on AWS EC2 allows you to leverage the scalability, reliability, and security of Amazon Web Services. This guide will go through the key AWS concepts such as EC2, VPC, subnet, route table, and security group, and how they all interlink to create a secure and scalable environment for your application.
 
-## Prerequisites
-- AWS Account
-- Basic understanding of networking concepts
-- Familiarity with the AWS Management Console
-
-## What is EC2?
+Prerequisites ✅
+AWS Account
+Basic understanding of networking concepts
+Familiarity with the AWS Management Console
+What is EC2? 🤔
 Amazon Elastic Compute Cloud (EC2) is a web service provided by Amazon Web Services (AWS) that allows users to rent virtual servers (referred to as "instances") on which they can run their applications. EC2 instances are essentially virtual machines that can be launched in the cloud and scaled up or down as needed.
 
 ![EC2](images/ec2logo.png)
