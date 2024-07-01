@@ -42,7 +42,8 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![VPC](images/vpc.png)
 *Figure 1: VPC - Created a VPC with a CIDR block of 10.0.0.0/16. CIDR blocks define a range of IP addresses. The VPC is your private section of the internet where you can run your servers securely.*
 
-> [!NOTE] 
+> [!NOTE]
+> What does it do?
 > This creates a virtual network dedicated to my AWS account with an address range of 10.0.0.0/16
 
 ## Step 2: Create a Subnet
@@ -59,6 +60,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 3: IGW - Created an Internet Gateway and attached it to the VPC. An Internet Gateway allows your servers to access the internet and lets people from the internet access your servers.*
 
 > [!NOTE]
+> What does it do?
 > This creates and attaches an Internet Gateway to my VPC, enabling internet connectivity essential for web servers and other resources that need to communicate with the outside world.
 
 ## Step 4: Create a Route Table
@@ -67,6 +69,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 4: RTB - Created a route table for the VPC, then created a route to direct internet traffic to the Internet Gateway and associated the route table with the subnet. The route table determines how traffic is directed within the VPC.*
 
 > [!NOTE]
+> What does it do?
 > Associating the route table with the subnet ensures that traffic from the subnet is routed through the Internet Gateway, allowing instances in the subnet to access the internet.
 
 ## Step 5: Create EC2 Instance with Public IP
@@ -83,6 +86,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 6: During the EC2 setup, created a security group, enabled auto-assign public IP, and configured inbound rules for port 22 for SSH access. Security groups act like virtual firewalls for your instance.*
 
 > [!NOTE]
+> What does it do?
 > Controls the incoming and outgoing traffic to and from your instance.
 
 ## Step 7: Connect to the EC2 Instance
@@ -91,6 +95,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 *Figure 7: Ran the chmod command to ensure my key is not publicly viewable, then ran the ssh command to securely access my server. The chmod 400 command sets the file permissions of the private key file (coderco-prod.pem) so that only the owner can read it.*
 
 > [!NOTE]
+> What does it do?
 > Uses SSH to open a remote connection to the EC2 instance.
 
 ## Step 8: Install Nginx
@@ -103,8 +108,8 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 
 > [!NOTE]
 > - **Web Server:** Handles HTTP requests, delivering web content to visitors’ browsers.
-> - - **Reverse Proxy:** Acts as an intermediary, improving load distribution and reducing server load.
->   - - **Load Balancer:** Distributes incoming traffic across multiple servers, preventing any single server from becoming a bottleneck.
+> - **Reverse Proxy:** Acts as an intermediary, improving load distribution and reducing server load.
+> - **Load Balancer:** Distributes incoming traffic across multiple servers, preventing any single server from becoming a bottleneck.
 
 ## Step 9: Install PHP MySQL
 
@@ -125,7 +130,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 > [!NOTE]
 > **What does it do?**
 > - **MariaDB:** Handles data storage and management.
-> - - **PHP MySQL:** Enables PHP applications such as WordPress to communicate with MariaDB, sending queries and receiving data.
+> - **PHP MySQL:** Enables PHP applications such as WordPress to communicate with MariaDB, sending queries and receiving data.
 
 ## Step 11: Log in to MariaDB as the Root User and Create a Database and User for WordPress
 
@@ -136,20 +141,22 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![WordPress Permissions](images/wordpress-permissions.png)
 *Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to the HTML directory. Configured WordPress by setting database settings in wp-config.php and changed the ownership of all files and directories to the user 'nginx' and group 'nginx'.
 
-What does it do?
-- **Database:** Organizes data, ensuring WordPress can manage its data separately from other applications.
-- **User:** Restricts what the WordPress user can do within the database, minimizing security risks.
-- **Database Settings:** WordPress uses wp-config.php to connect to the MariaDB database.
-- **Changing Ownership:** Ensures that the Nginx user owns the WordPress files, allowing the web server to manage them correctly.
-- **Set Permissions:** Ensures directories are executable and readable (755), and files are readable (644), a secure configuration.
+> [!NOTE]
+> What does it do?
+> **Database:** Organizes data, ensuring WordPress can manage its data separately from other applications.
+> **User:** Restricts what the WordPress user can do within the database, minimizing security risks.
+> **Database Settings:** WordPress uses wp-config.php to connect to the MariaDB database.
+> **Changing Ownership:** Ensures that the Nginx user owns the WordPress files, allowing the web server to manage them correctly.
+> **Set Permissions:** Ensures directories are executable and readable (755), and files are readable (644), a secure configuration.
 
 ## Step 12: Nginx Configuration for WordPress and Setting the EC2 Public IP Address
 
 ![Nginx Configuration for WordPress](images/nginx-configuration-wordpress.png)
 *Figure 12: Configured Nginx to serve my WordPress site using my EC2 instance's public IP address by editing /etc/nginx/conf.d/wordpress.conf. This configuration ensures Nginx listens for requests coming to my EC2 instance's public IP address.*
 
-**What is it?**
-/etc/nginx/conf.d/wordpress.conf: Specifies the configuration settings for serving your WordPress site.
+> [!NOTE]
+> **What is it?**
+> /etc/nginx/conf.d/wordpress.conf: Specifies the configuration settings for serving your WordPress site.
 
 ## Step 13: Completed the WordPress Installation
 
@@ -160,3 +167,6 @@ What does it do?
 *Figure 13: Opened my web browser, navigated to http://35.176.248.55, and followed the on-screen instructions to complete the WordPress installation by entering details such as the site title, admin username, password, and email address. Successfully installed MariaDB, Nginx, PHP, and configured WordPress on my EC2 instance.*
 
 ## Clean-up
+
+> [!CAUTION]
+> To avoid incurring unnecessary charges, terminate the EC2 instance and delete the VPC, ensuring that all associated resources (subnets, internet gateway, route tables, security groups) are also removed.
