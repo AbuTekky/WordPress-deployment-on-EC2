@@ -150,7 +150,7 @@ One of the main reasons we need EC2 instances is because they offer **scalabilit
 ![MariaDB for WordPress](images/MariaDBWordpress.png)
 ![Download WordPress](images/downloadwordpress.png)
 ![WordPress Config](images/wordpressconfig.png)
-![Database Settings](images/databasesettings.png)
+![Database Settings](images/databasesettings.JPG)
 ![WordPress Permissions](images/wppermissions.png)
 
 *Figure 11: Logged in to MariaDB as the root user, created a database and user for WordPress, navigated to the web root directory, downloaded the latest version of WordPress, extracted the downloaded tar.gz file, and moved the extracted WordPress files to the HTML directory. Configured WordPress by setting database settings in wp-config.php and changed the ownership of all files and directories to the user 'nginx' and group 'nginx'.
